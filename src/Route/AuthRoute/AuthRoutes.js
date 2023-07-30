@@ -2,16 +2,14 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
-import Splash from './src/screens/Stack/Splash'
-import Parent from './src/screens/Stack/Parent'
+import Splash from '../../screens/Stack/Splash'
+import Parent from '../../screens/Stack/Parent'
 
-// Stack Navigator
 const Stack = createNativeStackNavigator()
-// Drawer Navigator
-// Bottom Navigator
-const Navigation = () => {
+const AuthRoutes = () => {
+  
   return (
-    <NavigationContainer>
+    
       <Stack.Navigator>
         <Stack.Screen
           name="Splash"
@@ -24,8 +22,8 @@ const Navigation = () => {
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
-    </NavigationContainer>
+    
   );
 }
 
-export default Navigation
+export default AuthRoutes
