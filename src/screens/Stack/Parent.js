@@ -7,7 +7,7 @@ import DrawerNavigator from '../Drawer/DrawerNavigator';
 const Parent = () => {
   return (
     <SafeAreaView>
-      <DrawerNavigator />
+      {/* <DrawerNavigator /> */}
       <Main />
     </SafeAreaView>
   );
